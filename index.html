@@ -13,51 +13,62 @@
         margin-bottom:40px;
         text-align: center;
     }
-    p {
+    #p1, #p2, #p3 {
         border: 3px solid black;
         background-color: dimgray;
-        width: 90%;
-        height: 150px;
+        height: 200px;
         margin-left: auto;
         margin-right: auto;
+        padding-block-start: 7%;
+        padding-left: 2%;
+        padding-right: 2%;
         font-family: Helvetica;
-        
+        position: relative;    
     }
-    #p1 {
-        width: 100px;
-        height: 25px;
-        text-align: center;
-       background: pink;
-        border: 3px solid black;
-        float: right; 
-        font-weight: bold;
-      
+    #p1{
+        width: 90%;
     }
-    #p2 {
-        width: 100px;
-        height: 25px;
-        text-align: center;
-        background: red;
-        border: 3px solid black;
-        float: right; 
-        color: white;
-        font-weight: bold;
+    #p2{
+        width: 90%;
     }
     #p3 {
+        width: 90%;
+    }
+    .t1, .t2, .t3 {
         width: 100px;
         height: 25px;
         text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        right: -1px;
+    }
+    .t1 {
+        
+        background: pink;
+        border: 3px solid black;
+        
+        
+      
+    }
+    .t2 {
+        
+        background: red;
+        border: 3px solid black;
+        color: white;
+        
+    }
+   .t3 {
        background: sandybrown;
         border: 3px solid black;
-        float: right; 
-        font-weight: bold;
+        
     }
     .row {
         width: 100%;
     }
 
     /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;   
   }
@@ -100,7 +111,7 @@
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
     /* border: 1px solid green; */
@@ -148,9 +159,9 @@
     <h1>Our Menu</h1>
 
     <div class="row">
-        <div class="col-lg-4 col-md-6"><p><span id="p1">Chiken</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a accusamus suscipit blanditiis ratione et quod iste dolor quae delectus debitis libero aut excepturi ullam id distinctio non, amet minus omnis temporibus cum neque. Pariatur culpa voluptatum quo. Natus labore recusandae tempora maiores, aperiam quaerat quisquam? In earum temporibus voluptate.</p></div>
-        <div class="col-lg-4 col-md-6"><p><span id="p2">Beef</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio reprehenderit eos voluptate sequi, error quisquam quas consequuntur rerum fuga labore delectus voluptates. Adipisci in amet vitae blanditiis nemo laboriosam repellat quaerat, dolorum porro nisi reprehenderit eius neque. Ducimus laudantium sunt eos nulla sequi unde eveniet, sapiente cumque quam iure?</p></div>
-        <div class="col-lg-4 col-md-12"><p><span id="p3">Sushi</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad perferendis culpa labore, voluptatibus aspernatur odio ipsam? Ipsam alias enim harum non placeat incidunt quibusdam voluptate molestiae voluptatem esse illo eaque possimus laborum ipsa labore, nihil cum, nemo recusandae laboriosam aperiam quia. Soluta accusantium deleniti culpa delectus, eum distinctio sint.</p></div>
+        <div class="col-lg-4 col-md-6"><p id="p1"><span class="t1">Chiken</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a accusamus suscipit blanditiis ratione et quod iste dolor quae delectus debitis libero aut excepturi ullam id distinctio non, amet minus omnis temporibus cum neque. Pariatur culpa voluptatum quo. Natus labore recusandae tempora maiores, aperiam quaerat quisquam? In earum temporibus voluptate.</p></div>
+        <div class="col-lg-4 col-md-6"><p id="p2"><span class="t2">Beef</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio reprehenderit eos voluptate sequi, error quisquam quas consequuntur rerum fuga labore delectus voluptates. Adipisci in amet vitae blanditiis nemo laboriosam repellat quaerat, dolorum porro nisi reprehenderit eius neque. Ducimus laudantium sunt eos nulla sequi unde eveniet, sapiente cumque quam iure?</p></div>
+        <div class="col-lg-4 col-md-12"><p id="p3"><span class="t3">Sushi</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad perferendis culpa labore, voluptatibus aspernatur odio ipsam? Ipsam alias enim harum non placeat incidunt quibusdam voluptate molestiae voluptatem esse illo eaque possimus laborum ipsa labore, nihil cum, nemo recusandae laboriosam aperiam quia. Soluta accusantium deleniti culpa delectus, eum distinctio sint.</p></div>
     </div>
 </body>
 </html>
